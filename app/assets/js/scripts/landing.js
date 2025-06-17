@@ -253,16 +253,6 @@ const refreshServerStatus = async (fade = false) => {
         loggerLanding.warn('Unable to refresh server status, assuming offline.')
         loggerLanding.debug(err)
     }
-    if(fade){
-        $('#server_status_wrapper').fadeOut(250, () => {
-            document.getElementById('landingPlayerLabel').innerHTML = pLabel
-            document.getElementById('player_count').innerHTML = pVal
-            $('#server_status_wrapper').fadeIn(500)
-        })
-    } else {
-        document.getElementById('landingPlayerLabel').innerHTML = pLabel
-        document.getElementById('player_count').innerHTML = pVal
-    }
     
 }
 

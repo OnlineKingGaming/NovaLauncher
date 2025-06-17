@@ -2498,7 +2498,7 @@ input:checked + .toggleSwitchSlider:before {
     top: 25px;
     display: inline-flex;
     line-height: 24px;
-    left: 50px;
+    left: 0px;
 }
 #landingContainer > #lower > #center {
     position: relative;
